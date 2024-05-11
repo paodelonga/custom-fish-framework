@@ -5,7 +5,9 @@ function __init__
     set custom_path (dirname (status -f))
 
     # set modules names here
-    set --export module_list
+    set -a module_list "fish_user_key_bindings.fish"
+    set -a module_list "fzf_default_key_bindings.fish"
+    set -a module_list "fzf_user_key_bindings.fish"
 
 
     for _file in (ls "$custom_path" --ignore 'init.fish')
