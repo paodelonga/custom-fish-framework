@@ -2,7 +2,7 @@
 function __custom_init__
     set --export CUSTOM_PATH (dirname (status -f))
 
-    # sourcing custom loader
+    # load profile
     test -r "$CUSTOM_PATH/profile.fish" &&
     source "$CUSTOM_PATH/profile.fish" ||
     echo "cannot source $CUSTOM_PATH/profile.fish"
@@ -22,6 +22,8 @@ function __custom_init__
             source "$module_file_path" || "cannot load module $module_file_path"
         end
     end
+
+    import_module 'keybindings'
 
     for _PATH in $CUSTOM_PATH/{"aliases","functions","completions"}
         for _FILE in (tree "$_PATH" -afinF --noreport | grep -v '/$')
