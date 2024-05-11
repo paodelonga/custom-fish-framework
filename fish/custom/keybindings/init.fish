@@ -2,7 +2,7 @@
 
 # well...
 function __init__
-    set --export custom_path (dirname (status -f))
+    set custom_path (dirname (status -f))
 
     # set modules names here
     set --export module_list
