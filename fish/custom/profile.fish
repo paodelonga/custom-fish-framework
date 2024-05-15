@@ -1,9 +1,9 @@
 # enviroment variables
-set -gx REPOS_PATH /home/paodelonga/Repositories/
-set -gx BROWSER firefox
-set -gx EDITOR micro
-set -gx IDE nvim
-set -gx PAGER cat
+set -x REPOS_PATH /home/paodelonga/Repositories/
+set -x BROWSER firefox
+set -x EDITOR micro
+set -x IDE nvim
+set -x PAGER cat
 
 # configure pinentry to current tty
-set -g GPG_TTY (tty)
+set -x GPG_TTY (tty)
