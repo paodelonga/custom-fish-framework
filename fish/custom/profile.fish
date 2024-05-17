@@ -6,4 +6,4 @@ set -x IDE nvim
 set -x PAGER cat
 
 # configure pinentry to current tty
-set -x GPG_TTY (tty)
+set -xg GPG_TTY (tty)
