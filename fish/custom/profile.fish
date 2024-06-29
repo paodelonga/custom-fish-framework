@@ -1,5 +1,5 @@
 # enviroment variables
-set -x REPOS_PATH /home/paodelonga/Repositories/
+set -x REPOS_PATH "/home/paodelonga/repositories/"
 set -x BROWSER firefox
 set -x EDITOR micro
 set -x IDE nvim

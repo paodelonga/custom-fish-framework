@@ -27,7 +27,7 @@ function __cff_initializer__
     import_module "aliases" "completions" "keybindings"
 
     # gambi
-    for _PATH in $CFF_PATH/"functions"
+    for _PATH in $CFF_PATH/"functions" $CFF_PATH/"conf.d"
         for _FILE in (tree "$_PATH" -afinF --noreport | grep -v '/$')
             source "$_FILE"
         end

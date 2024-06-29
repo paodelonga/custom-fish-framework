@@ -6,7 +6,6 @@ set -x __FUNCNAME "__cff_$(basename (dirname (status -f)))_initializer__"
 function $__FUNCNAME
     # set modules names here
     set -a MODULE_LIST "gh"
-    set -a MODULE_LIST "glog"
 
     set module_path (dirname (status -f))
     set module_name (basename $module_path)

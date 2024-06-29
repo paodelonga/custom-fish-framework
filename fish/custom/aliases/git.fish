@@ -30,3 +30,5 @@ alias gchkc="git commit -m 'checkpoint: $(uuidgen -r)'"
 alias gsw="git switch"
 alias gswc="git switch -c"
 alias gswo="git switch --orphan"
+
+alias glog='git log --pretty=format:"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]" --abbrev-commit -30'
